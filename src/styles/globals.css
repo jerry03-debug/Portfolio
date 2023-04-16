@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+    font-family: 'LaBelleAurore';
+    src: url('../assets/fonts/LaBelleAurore.woff');
+}
+@font-face {
+    font-family: 'coolvetica';
+    src: url('../assets/fonts/CoolveticaRg-Regular.woff');
+}
+@font-face {
+    font-family: 'titillium';
+    src: url('../assets/fonts/TitilliumWeb-Black.ttf');
+}
+@font-face {
+    font-family: 'titilliumRegular';
+    src: url('../assets/fonts/TitilliumWeb-Regular.ttf');
+}
