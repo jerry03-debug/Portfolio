@@ -1,10 +1,9 @@
 import { useState } from 'react'
-import './App.css'
+import './index.css'
 import { Route, Routes,BrowserRouter } from 'react-router-dom';
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="relative z-0 bg-primary">

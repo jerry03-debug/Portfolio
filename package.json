@@ -26,10 +26,11 @@
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.57.1",
+    "three": "^0.152.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview"
   },
