@@ -2,12 +2,13 @@ import {Suspense, useEffect, useState} from 'react'
 import{ Canvas} from '@react-three/fiber';
 import {OrbitControls, Preload, useGLTF} from '@react-three/drei'
 import CanvasLoader from '../Loader'
-import {HemisphereLight} from 'three'
+// import {HemisphereLight} from 'three'
 
 
 const Computers = () => {
-  const computer = useGLTF('../../../public/desktop_pc/scene.gltf')
+  const computer = useGLTF('./desktop_pc/scene.gltf')
   console.log(computer.scene)
+  console.log("I AM HERE")
   return (
     <mesh>
       <HemisphereLight intensity={0.15}
