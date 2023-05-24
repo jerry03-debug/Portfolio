@@ -24,7 +24,7 @@ const Navbar = () => {
         }}
         >
           <img src={logo} alt="logo" className="w-24  object-contain"/>
-          <p className="font-bold cursor-pointer text-white text-18 font-bold cursor-pointer flex flex-col md:flex-row  ">Diery Dia <span className="ml-1">|Software Developer</span> </p>
+          <p className=" text-white text-sm md:text-xl font-bold cursor-pointer flex flex-row ">Diery Dia <span className="ml-1">|Software Developer</span> </p>
         </Link>
       
         <ul className="list-none hidden sm:flex flex-row gap-10 ">
