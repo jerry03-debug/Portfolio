@@ -9,7 +9,7 @@ const Computers = ({isMobile}) => {
   const computer = useGLTF('./desktop_pc/scene.gltf')
 
   return (
-    <mesh >
+    <mesh  >
       // eslint-disable-next-line
       <hemisphereLight intensity={0.2} 
        groundColor="black"/>
