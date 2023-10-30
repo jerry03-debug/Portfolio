@@ -7,6 +7,6 @@ import svgrPlugin from 'vite-plugin-svgr';
 export default defineConfig({
   plugins: [react(), viteTsconfigPaths(), svgrPlugin()],
   build: {
-    outDir: 'dist', // Spécifiez ici le répertoire de sortie souhaité
+    outDir: 'build', // Spécifiez ici le répertoire de sortie souhaité
   },
 });
