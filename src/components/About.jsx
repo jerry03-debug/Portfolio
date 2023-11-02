@@ -44,9 +44,8 @@ const About = () => {
       <h2 className={styles.sectionHeadText}>Overview</h2>
     </motion.div>
 
-    <motion.p  variants={fadeIn("","",0.1,1)} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cupiditate amet placeat. Doloribus iste aperiam omnis! Earum, velit quo error, ea consectetur incidunt corrupti maiores exercitationem perferendis sint placeat ut?
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente aut, aperiam reiciendis explicabo excepturi vitae autem esse culpa, magni praesentium, nisi officiis nam. Doloremque perspiciatis vitae fuga optio. Minus, molestiae.
+    <motion.p  variants={fadeIn("","",0.1,1)} className="mt-4 text-gray-100 text-[17px] max-w-3xl leading-[30px]">
+    Salut ! Je suis un développeur full stack passionné et Élève ingenieur en informatique à l'École Supérieure Polytechnique de Dakar. Mon parcours dans le monde de la technologie m'a permis de combiner ma créativité avec mes compétences techniques pour créer des solutions innovantes. Explorez ces pages pour découvrir mes projets et ma passion pour la programmation. Bienvenue dans mon univers numérique, où l'innovation et la technologie se rencontrent !
     </motion.p>
 
     <div className='mt-20 flex flex-wrap gap-10'>
