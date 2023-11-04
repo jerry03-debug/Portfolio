@@ -207,6 +207,7 @@
 }
 .cursor {
   transition: all 0.07s ease-in-out;
-  border: dotted 0.5px purple;
-  box-shadow: 0px 5px 45px 30px rgba(128, 0, 128, 0.5); /* Couleur violette avec une opacité de 0.5 */
+  border: double 2px purple;
+  box-shadow: 0px 5px 45px 30px purple; /* Couleur violette avec une opacité de 0.5 */
+  
 }

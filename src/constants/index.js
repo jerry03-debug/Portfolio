@@ -42,7 +42,7 @@ import {
   
   const services = [
     {
-      title: "Concepteur d'applis Web",
+      title: "Concepteur d'applications Web",
       icon: web,
     },
     {
@@ -116,55 +116,34 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "Développeur Mobile",
+      company_name: "Wergu",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Juin 2022 - Juillet 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Stage conventionné de fin de cycle pour l'obtention du diplôme de technicien supérieur en informatique",
+        "Mise en place d'une application mobile de l'analyse au developpement avec notamment le framework React Native",
+        "Participation à des revues de code et fournir des retours constructifs aux autres développeurs.",
+        "Travail en équipe en suivant la méthodologie Agile pour favoriser l'adaptabilité tout au long du projet",
+
       ],
     },
+   
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
+      title: "Développeur Full stack ",
+      company_name: "Wergu",
       icon: meta,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "Avril 2023 - Octobre 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Création de design pour avoir des produits intuitifs pour les utilisateurs",
+        "Le développement et la maintenance d'applications web dans le domaine de la santé. ",
+        "Utilisation de la stack MERN (MongoDB,Express,ReactJS,NodeJS)",
+        "Collaboration avec des équipes pluridisciplinaires, y compris des concepteurs, des chefs de produit et d'autres développeurs, pour créer des produits de haute qualité.",
+        
+
+
       ],
     },
   ];
