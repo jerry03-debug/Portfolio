@@ -5,7 +5,6 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -24,13 +23,21 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
+import wergu from "./company/wergu.png"
+import wergu_web from "./wergu_web.png"
+import medsen from "./medsen.png"
+import stock_backend from "./stock_backend.png"
+import parapharm from "./parapharm.png"
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import logo from "./logo.png";
 
 export {
+  wergu_web,
+  medsen,
+  stock_backend,
+  parapharm,
   logo,
   backend,
   creator,
@@ -59,4 +66,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  wergu
 };

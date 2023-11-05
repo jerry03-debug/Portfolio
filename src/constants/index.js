@@ -17,8 +17,12 @@ import {
     docker,
     meta,
     starbucks,
-    tesla,
+    wergu,
     shopify,
+    wergu_web,
+    medsen,
+    stock_backend,
+    parapharm,
     carrent,
     jobit,
     tripguide,
@@ -118,8 +122,8 @@ import {
     {
       title: "Développeur Mobile",
       company_name: "Wergu",
-      icon: starbucks,
-      iconBg: "#383E56",
+      icon: wergu,
+      iconBg: "#fff",
       date: "Juin 2022 - Juillet 2022",
       points: [
         "Stage conventionné de fin de cycle pour l'obtention du diplôme de technicien supérieur en informatique",
@@ -133,8 +137,8 @@ import {
     {
       title: "Développeur Full stack ",
       company_name: "Wergu",
-      icon: meta,
-      iconBg: "#E6DEDD",
+      icon: wergu,
+      iconBg: "#fff",
       date: "Avril 2023 - Octobre 2023",
       points: [
         "Création de design pour avoir des produits intuitifs pour les utilisateurs",
@@ -177,12 +181,33 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Wergu Web",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Version Web de l'application mobile Wergu permettant voir les pharmacies ouvertes les plus proches dans notre zone.Il y a aussi entre autres la recherche d'equivalents et la des prix des medicaments sur le marché.",
       tags: [
         {
           name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "nextjs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tomtom_maps",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: wergu_web,
+      source_code_link: "https://github.com/Wergu/wergu-web-client",
+    },
+    {
+      name: "Parapharm Mobile",
+      description:
+        "Application mobile permettant de rechercher des produits parapharmaceutiques au niveau des pharmacies les plus proches",
+      tags: [
+        {
+          name: "react native",
           color: "blue-text-gradient",
         },
         {
@@ -190,54 +215,56 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "maps",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: parapharm,
+      source_code_link: "https://github.com/Wergu/parapharm-mobile",
     },
     {
-      name: "Job IT",
+      name: "Medsen Website",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Site vitrine pour une entreprise médical au Sénégal.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "next.js",
           color: "green-text-gradient",
         },
+       
         {
-          name: "scss",
+          name: "AOS",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: medsen,
+      source_code_link: "https://github.com/jerry03-debug/MedSen",
     },
     {
-      name: "Trip Guide",
+      name: "Wergu Stock API",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "API comprenant l'authentification, la gestion de commandes et les opérations CRUDE pour la gestion de stock des pharmacies.",
       tags: [
         {
-          name: "nextjs",
+          name: "mongodb",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "node.js",
           color: "green-text-gradient",
         },
+       
         {
-          name: "css",
+          name: "rest api",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: stock_backend,
+      source_code_link: "https://github.com/Wergu/wergu-stock-back",
     },
   ];
   
