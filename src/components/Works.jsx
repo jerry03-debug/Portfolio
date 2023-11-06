@@ -84,7 +84,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 grid grid-cols-3 gap-7'>
+      <div className='mt-20 grid justify-items-center lg:grid-cols-2 xl:grid-cols-3 gap-7'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

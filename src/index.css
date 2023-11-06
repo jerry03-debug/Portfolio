@@ -211,3 +211,9 @@
   box-shadow: 0px 5px 45px 30px purple; /* Couleur violette avec une opacité de 0.5 */
   
 }
+.glassmorphism{
+  /* From https://css.glass */
+  
+  box-shadow: inset 1px -1px 5px purple,
+              inset -1px 1px 10px rgb(49, 49, 114);
+}

@@ -32,11 +32,11 @@ import {
   export const navLinks = [
     {
       id: "about",
-      title: "About",
+      title: "Profil",
     },
     {
       id: "work",
-      title: "Work",
+      title: "Experience",
     },
     {
       id: "contact",
@@ -163,7 +163,7 @@ import {
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
+        "I've never met a web developer who truly cares profil their clients' success like Rick does.",
       name: "Chris Brown",
       designation: "COO",
       company: "DEF Corp",

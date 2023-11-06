@@ -48,7 +48,7 @@ const About = () => {
     Salut ! Je suis un développeur full stack passionné et Élève ingenieur en informatique à l'École Supérieure Polytechnique de Dakar. Mon parcours dans le monde de la technologie m'a permis de combiner ma créativité avec mes compétences techniques pour créer des solutions innovantes. Explorez ces pages pour découvrir mes projets et ma passion pour la programmation. Bienvenue dans mon univers numérique, où l'innovation et la technologie se rencontrent !
     </motion.p>
 
-    <div className='mt-20 flex flex-wrap gap-10'>
+    <div className='mt-20 grid justify-items-center lg:grid-cols-2 xl:grid-cols-3 gap-7'>
       {services.map((service,index)=>(
         <ServiceCard key={service.title} index={index} {...service} />
         ))}
