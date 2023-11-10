@@ -155,26 +155,26 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "Diéry est un technicien de très haut niveau possédant d'excellentes connaissances techniques et méthodologiques, et qui sait s’approprier rapidement du code d'un projet aussi bien en back qu'en front.",
+      name: "Mouhamed Sylla",
+      designation: "CONSULTANT DEVOPS / SCRUM-MASTER",
+      company: "EVIDEN",
+      image: "https://media.licdn.com/dms/image/C5103AQHA47BQUsKEcA/profile-displayphoto-shrink_200_200/0/1517058962856?e=2147483647&v=beta&t=mvZC0evAf6l5FxVE8DxnA41gEs6LBjs0Hym9v-RN7MA",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares profil their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
+        "En plus d’etre passionné, Diery est une personne qui a une qualité rare: Celle de s’adapter aux différentes situations sur lesquelles on le fait travailler. C’est un atout majeur dans un milieu qui evolue rapidement!",
+      name: "Cheikh Seck",
+      designation: "CEO",
+      company: "Wergu",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
       testimonial:
         "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
+      name: "Docko Sow",
       designation: "CTO",
-      company: "456 Enterprises",
+      company: "Wergu",
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
