@@ -167,15 +167,15 @@ import {
       name: "Cheikh Seck",
       designation: "CEO",
       company: "Wergu",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+      image: "https://media.licdn.com/dms/image/C4D03AQESjuE1rY9FmA/profile-displayphoto-shrink_400_400/0/1619276412284?e=1704931200&v=beta&t=4eLL8Rrzj6uh2HkaI8O8lA6bGonp0vhkxnlKZOuDH2U",
     },
     {
       testimonial:
         "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
       name: "Docko Sow",
-      designation: "CTO",
-      company: "Wergu",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      designation: "Head of AI and Research",
+      company: "TOLBI",
+      image: "https://media.licdn.com/dms/image/C4E03AQHtoPcfSwLPow/profile-displayphoto-shrink_400_400/0/1661264116344?e=1704931200&v=beta&t=nIF4lhCSrWAKc0aOrK6j05ushsNNILMiV59R5YUrnIU",
     },
   ];
   
