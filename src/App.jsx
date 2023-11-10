@@ -11,6 +11,7 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  Footer
 } from './components'
 import { motion } from 'framer-motion'
 import { useRef } from 'react'
@@ -54,6 +55,7 @@ function App() {
         <StarsCanvas />
        
       </div>
+      <Footer/>
       <button
           onClick={()=>window.scrollTo(0,0)}
           class="fixed bottom-4 right-4 z-50 bg-purple-700 text-white shadow-purple-800 shadow-md w-8 h-8 rounded-[50%] hover:bg-white hover:text-purple-700 hover:border-purple-600 hover:border transition-all focus:outline-none focus:ring-2 focus:ring-purple-300  text-2xl"
