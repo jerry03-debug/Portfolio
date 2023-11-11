@@ -15,6 +15,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [emailSent,setEmailSent] = useState()
 
   const [loading, setLoading] = useState(false);
 
@@ -50,8 +51,9 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
+          setEmailSent(true);
+          setTimeout(()=>
+            setEmailSent(null),4000)
           setForm({
             name: "",
             email: "",
@@ -60,9 +62,11 @@ const Contact = () => {
         },
         (error) => {
           setLoading(false);
+          setEmailSent(false);
+          setTimeout(()=>
+            setEmailSent(null),4000)
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
         }
       );
   };
@@ -86,6 +90,7 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Prénom</span>
             <input
+            required
               type='text'
               name='name'
               value={form.name}
@@ -97,6 +102,7 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Email</span>
             <input
+            required
               type='email'
               name='email'
               value={form.email}
@@ -108,6 +114,7 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'> Message</span>
             <textarea
+            required
               rows={7}
               name='message'
               value={form.message}
@@ -123,7 +130,10 @@ const Contact = () => {
           >
             {loading ? "En cours d'envoi..." : "Envoyer"}
           </button>
+          {emailSent && <span className="text-green-500 font-bold animate-pulse">Merci! Nous allons vous revenir le plus tot possible.</span>}
+          {emailSent==false && <span className="text-red-500 font-bold animate-pulse">Oups! Une chose s'est mal passée, veuillez réessayez.</span>}
         </form>
+
       </motion.div>
 
       <motion.div
