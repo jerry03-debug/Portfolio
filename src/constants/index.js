@@ -171,10 +171,10 @@ import {
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+        "Travailler avec Diery Dia a été une expérience remarquable ; ses compétences exceptionnelles en développement back-end et son attention méticuleuse aux algorithmes et aux détails ont considérablement amélioré nos projets.",
       name: "Docko Sow",
-      designation: "Head of AI and Research",
-      company: "TOLBI",
+      designation: "CTO",
+      company: "Wergu",
       image: "https://media.licdn.com/dms/image/C4E03AQHtoPcfSwLPow/profile-displayphoto-shrink_400_400/0/1661264116344?e=1704931200&v=beta&t=nIF4lhCSrWAKc0aOrK6j05ushsNNILMiV59R5YUrnIU",
     },
   ];
