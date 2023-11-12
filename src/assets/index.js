@@ -32,10 +32,11 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import logo from "./logo.png";
-
+import password from "./password.png"
 export {
   wergu_web,
   medsen,
+  password,
   stock_backend,
   parapharm,
   logo,

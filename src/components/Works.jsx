@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Tilt from 'react-parallax-tilt'
 import { motion } from "framer-motion";
 
@@ -16,6 +16,7 @@ const ProjectCard = ({
   image,
   source_code_link,
 }) => {
+  const [privateRepo,setPrivateRepo] = useState(false)
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -35,7 +36,7 @@ const ProjectCard = ({
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() =>source_code_link!=""? window.open(source_code_link, "_blank"):setPrivateRepo(true)}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
@@ -62,6 +63,8 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
+        {privateRepo && <div className="text-red-600">Ce repository est privé.</div>}
+
       </Tilt>
     </motion.div>
   );

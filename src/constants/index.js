@@ -23,9 +23,7 @@ import {
     medsen,
     stock_backend,
     parapharm,
-    carrent,
-    jobit,
-    tripguide,
+    password,
     threejs,
   } from "../assets";
   
@@ -199,7 +197,7 @@ import {
         },
       ],
       image: wergu_web,
-      source_code_link: "https://github.com/Wergu/wergu-web-client",
+      source_code_link: "",
     },
     {
       name: "Parapharm Mobile",
@@ -220,34 +218,26 @@ import {
         },
       ],
       image: parapharm,
-      source_code_link: "https://github.com/Wergu/parapharm-mobile",
+      source_code_link: "",
     },
     {
-      name: "Medsen Website",
+      name: "Password Cracker",
       description:
-        "Site vitrine pour une entreprise médical au Sénégal.",
+        "Programme de cassage de mot de passe par des méthodes tel que BruteForce ou Dictionnary.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "next.js",
-          color: "green-text-gradient",
-        },
-       
-        {
-          name: "AOS",
+          name: "Java",
           color: "pink-text-gradient",
         },
+       
       ],
-      image: medsen,
-      source_code_link: "https://github.com/jerry03-debug/MedSen",
+      image: password,
+      source_code_link: "https://github.com/jerry03-debug/PasswordCracker/",
     },
     {
       name: "Wergu Stock API",
       description:
-        "API comprenant l'authentification, la gestion de commandes et les opérations CRUDE pour la gestion de stock des pharmacies.",
+        "API comprenant l'authentification, la gestion de commandes et les opérations CRUD pour la gestion de stock des pharmacies.",
       tags: [
         {
           name: "mongodb",
@@ -264,7 +254,7 @@ import {
         },
       ],
       image: stock_backend,
-      source_code_link: "https://github.com/Wergu/wergu-stock-back",
+      source_code_link: "",
     },
   ];
   
