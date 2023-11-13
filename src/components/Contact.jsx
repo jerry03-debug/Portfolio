@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
+import {HiOutlineDocumentDownload} from 'react-icons/hi'
 import { styles } from "../style";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -18,6 +18,14 @@ const Contact = () => {
   const [emailSent,setEmailSent] = useState()
 
   const [loading, setLoading] = useState(false);
+  //Télécharger CV
+  const downloadCV = ()=>{
+    const pdfUrl =  '/public/Mon_CV.pdf';
+
+    
+    // Open the PDF in a new window
+    window.open(pdfUrl, '_blank');
+  }
 
   const handleChange = (e) => {
     const { target } = e;
@@ -123,13 +131,21 @@ const Contact = () => {
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
+          <div className="flex gap-6">
 
           <button
             type='submit'
             className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
-          >
+            >
             {loading ? "En cours d'envoi..." : "Envoyer"}
           </button>
+          <span
+            onClick={downloadCV}
+            className='bg-purple-700  whitespace-nowrap py-2 px-4 hover:bg-transparent hover:border hover:border-purple-600  transition-all rounded-xl outline-none flex items-center gap-2 text-white font-bold shadow-md shadow-primary'
+            >
+             <HiOutlineDocumentDownload size={28}/> Mon CV 
+          </span>
+            </div>
           {emailSent && <span className="text-green-500 font-bold animate-pulse">Merci! Nous allons vous revenir le plus tot possible.</span>}
           {emailSent==false && <span className="text-red-500 font-bold animate-pulse">Oups! Une chose s'est mal passée, veuillez réessayez.</span>}
         </form>

@@ -25,6 +25,9 @@ import {
     parapharm,
     password,
     threejs,
+    mouhamed_sylla,
+    docko_sow,
+    cheikh_seck,
   } from "../assets";
   
   export const navLinks = [
@@ -141,7 +144,7 @@ import {
       points: [
         "Création de design pour avoir des produits intuitifs pour les utilisateurs",
         "Le développement et la maintenance d'applications web dans le domaine de la santé. ",
-        "Utilisation de la stack MERN (MongoDB,Express,ReactJS,NodeJS)",
+        "Utilisation de la stack MERN (MongoDB,Express,React,Node)",
         "Collaboration avec des équipes pluridisciplinaires, y compris des concepteurs, des chefs de produit et d'autres développeurs, pour créer des produits de haute qualité.",
         
 
@@ -157,7 +160,7 @@ import {
       name: "Mouhamed Sylla",
       designation: "CONSULTANT DEVOPS / SCRUM-MASTER",
       company: "EVIDEN",
-      image: "https://media.licdn.com/dms/image/C5103AQHA47BQUsKEcA/profile-displayphoto-shrink_200_200/0/1517058962856?e=2147483647&v=beta&t=mvZC0evAf6l5FxVE8DxnA41gEs6LBjs0Hym9v-RN7MA",
+      image: mouhamed_sylla,
     },
     {
       testimonial:
@@ -165,7 +168,7 @@ import {
       name: "Cheikh Seck",
       designation: "CEO",
       company: "Wergu",
-      image: "https://media.licdn.com/dms/image/C4D03AQESjuE1rY9FmA/profile-displayphoto-shrink_400_400/0/1619276412284?e=1704931200&v=beta&t=4eLL8Rrzj6uh2HkaI8O8lA6bGonp0vhkxnlKZOuDH2U",
+      image: cheikh_seck,
     },
     {
       testimonial:
@@ -173,7 +176,7 @@ import {
       name: "Docko Sow",
       designation: "CTO",
       company: "Wergu",
-      image: "https://media.licdn.com/dms/image/C4E03AQHtoPcfSwLPow/profile-displayphoto-shrink_400_400/0/1661264116344?e=1704931200&v=beta&t=nIF4lhCSrWAKc0aOrK6j05ushsNNILMiV59R5YUrnIU",
+      image: docko_sow,
     },
   ];
   
