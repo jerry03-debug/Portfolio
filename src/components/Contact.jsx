@@ -22,9 +22,16 @@ const Contact = () => {
   const downloadCV = ()=>{
     const pdfUrl =  '/public/Mon_CV.pdf';
 
-    
-    // Open the PDF in a new window
-    window.open(pdfUrl, '_blank');
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.setAttribute('download', 'CV-Diery-Dia.pdf'); // Changez le nom du fichier téléchargé si nécessaire
+
+    // Appending the link to the body to trigger the download
+    document.body.appendChild(link);
+    link.click();
+
+    // Removing the link from the body
+    document.body.removeChild(link);
   }
 
   const handleChange = (e) => {
