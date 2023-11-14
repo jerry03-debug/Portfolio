@@ -25,7 +25,7 @@ const Contact = () => {
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.setAttribute('download', 'CV-Diery-Dia.pdf'); // Changez le nom du fichier téléchargé si nécessaire
-
+    link.type = 'application/pdf';
     // Appending the link to the body to trigger the download
     document.body.appendChild(link);
     link.click();
