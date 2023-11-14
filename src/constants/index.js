@@ -184,7 +184,7 @@ import {
     {
       name: "Wergu Web",
       description:
-        "Version Web de l'application mobile Wergu permettant voir les pharmacies ouvertes les plus proches dans notre zone.Il y a aussi entre autres la recherche d'equivalents et la des prix des medicaments sur le marché.",
+      "Version web de l’application mobile Wergu. Elle permet de voir les pharmacies ouvertes les plus proches et de fournir des informations pour faciliter l’accès aux médicaments. Parmi ses fonctionnalités, il y a également la recherche d’équivalents pour les médicaments ainsi que leurs prix.",
       tags: [
         {
           name: "react",

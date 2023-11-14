@@ -19,20 +19,31 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
   //Télécharger CV
-  const downloadCV = ()=>{
-    const pdfUrl =  '/public/Mon_CV.pdf';
-
-    const link = document.createElement('a');
-    link.href = pdfUrl;
-    link.setAttribute('download', 'CV-Diery-Dia.pdf'); // Changez le nom du fichier téléchargé si nécessaire
-    link.type = 'application/pdf';
-    // Appending the link to the body to trigger the download
-    document.body.appendChild(link);
-    link.click();
-
-    // Removing the link from the body
-    document.body.removeChild(link);
-  }
+  const downloadCV = async () => {
+    const pdfUrl = '/Mon_CV.pdf';
+  
+    try {
+      const response = await fetch(pdfUrl);
+      const blob = await response.blob();
+  
+      const blobUrl = window.URL.createObjectURL(blob);
+  
+      const link = document.createElement('a');
+      link.href = blobUrl;
+      link.setAttribute('download', 'CV-Diery-Dia.pdf');
+      link.type = 'application/pdf';
+  
+      // Appending the link to the body to trigger the download
+      document.body.appendChild(link);
+      link.click();
+  
+      // Removing the link from the body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading the PDF:', error);
+    }
+  };
+  
 
   const handleChange = (e) => {
     const { target } = e;
