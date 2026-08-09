@@ -18,6 +18,12 @@ import {
     meta,
     starbucks,
     wergu,
+    awa,
+    proassur,
+    scanpay,
+    photographer_portfolio,
+    awa_chatbot,
+    logo,
     shopify,
     wergu_web,
     medsen,
@@ -121,6 +127,45 @@ import {
   
   const experiences = [
     {
+      title: "Software Engineer",
+      company_name: "AWA AFRICA",
+      icon: awa,
+      iconBg: "#fff",
+      date: "août 2025 - aujourd'hui",
+      points: [
+        "Participation à l'ensemble du cycle de développement des solutions numériques : conception, modélisation, développement et mise en production.",
+        "Optimisation et maintenance des systèmes pour garantir leur fiabilité et leurs performances.",
+        "Conception d'interfaces utilisateurs intuitives en collaboration avec l'équipe design.",
+        "Intégration de bonnes pratiques de développement logiciel et de revues de code pour améliorer la qualité du produit.",
+      ],
+    },
+    {
+      title: "Développeur Full Stack",
+      company_name: "Proassur SA",
+      icon: proassur,
+      iconBg: "#fff",
+      date: "août 2024 - août 2025",
+      points: [
+        "Contribution à la transformation digitale du secteur de l'assurance par le développement de solutions innovantes.",
+        "Amélioration de l'expérience client et optimisation des processus internes.",
+        "Mise en place d'applications web hybrides et de services back-end robustes.",
+        "Travail en mode collaboratif avec des équipes variées, dont produit, design et QA.",
+      ],
+    },
+    {
+      title: "Développeur Full Stack / Mobile Freelance",
+      company_name: "Freelance",
+      icon: logo,
+      iconBg: "#fff",
+      date: "nov. 2023 - sept. 2024",
+      points: [
+        "Réalisation de projets mobiles et web sur mesure pour des clients.",
+        "Conception et développement d'applications responsives et ergonomiques.",
+        "Gestion de la relation client et des livrables tout au long du cycle projet.",
+        "Création de prototypes et interfaces visuelles pour une expérience utilisateur forte.",
+      ],
+    },
+    {
       title: "Développeur Mobile",
       company_name: "Wergu",
       icon: wergu,
@@ -180,9 +225,75 @@ import {
     },
   ];
   
+  // Rangés du plus récent au plus ancien (cf. le champ `year`).
   const projects = [
     {
+      name: "Scan&Pay Assurances",
+      year: 2026,
+      description:
+      "Participation au développement d'une application web/mobile pour acheter de l'assurance auto, voyage et habitation.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "react native",
+          color: "green-text-gradient",
+        },
+        {
+          name: "payments",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: scanpay,
+      source_code_link: "https://scanpay.sn",
+      link_icon: "site",
+    },
+    {
+      name: "Portfolio - Photographe",
+      year: 2026,
+      description:
+        "Portfolio générique pour photographe, avec galerie et services.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "green-text-gradient",
+        },
+      ],
+      image: photographer_portfolio,
+      source_code_link: "https://jaypic-portfolio.vercel.app/",
+      link_icon: "site",
+    },
+    {
+      name: "AWA Chatbot",
+      year: 2025,
+      description:
+        "Chatbot WhatsApp permettant d'assurer son véhicule directement depuis la conversation.",
+      tags: [
+        {
+          name: "whatsapp",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "chatbot",
+          color: "green-text-gradient",
+        },
+        {
+          name: "assurance",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: awa_chatbot,
+      source_code_link: "",
+    },
+    {
       name: "Wergu Web",
+      year: 2023,
       description:
       "Version web de l’application mobile Wergu. Elle permet de voir les pharmacies ouvertes les plus proches et de fournir des informations pour faciliter l’accès aux médicaments. Parmi ses fonctionnalités, il y a également la recherche d’équivalents pour les médicaments ainsi que leurs prix.",
       tags: [
@@ -203,42 +314,8 @@ import {
       source_code_link: "",
     },
     {
-      name: "Parapharm Mobile",
-      description:
-        "Application mobile permettant de rechercher des produits parapharmaceutiques au niveau des pharmacies les plus proches",
-      tags: [
-        {
-          name: "react native",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "maps",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: parapharm,
-      source_code_link: "",
-    },
-    {
-      name: "Password Cracker",
-      description:
-        "Programme de cassage de mot de passe par des méthodes tel que BruteForce ou Dictionnary.",
-      tags: [
-        {
-          name: "Java",
-          color: "pink-text-gradient",
-        },
-       
-      ],
-      image: password,
-      source_code_link: "https://github.com/jerry03-debug/PasswordCracker/",
-    },
-    {
       name: "Wergu Stock API",
+      year: 2023,
       description:
         "API comprenant l'authentification, la gestion de commandes et les opérations CRUD pour la gestion de stock des pharmacies.",
       tags: [
@@ -250,7 +327,7 @@ import {
           name: "node.js",
           color: "green-text-gradient",
         },
-       
+
         {
           name: "rest api",
           color: "pink-text-gradient",
@@ -258,6 +335,21 @@ import {
       ],
       image: stock_backend,
       source_code_link: "",
+    },
+    {
+      name: "Password Cracker",
+      year: 2023,
+      description:
+        "Programme de cassage de mot de passe par des méthodes tel que BruteForce ou Dictionnary.",
+      tags: [
+        {
+          name: "Java",
+          color: "pink-text-gradient",
+        },
+
+      ],
+      image: password,
+      source_code_link: "https://github.com/jerry03-debug/PasswordCracker/",
     },
   ];
   

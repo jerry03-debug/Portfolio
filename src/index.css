@@ -117,6 +117,121 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* Skeleton de chargement des canvas 3D */
+.canvas-skeleton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* La largeur pilote toutes les proportions : la silhouette suit la taille
+   réelle du modèle à l'écran plutôt qu'une valeur fixe en pixels. */
+.canvas-skeleton--screen {
+  --sk-w: clamp(260px, 42vw, 620px);
+}
+
+.canvas-skeleton--sphere {
+  --sk-w: clamp(160px, 26vw, 340px);
+}
+
+.canvas-skeleton--dot {
+  --sk-w: 72px;
+}
+
+.canvas-skeleton__screen,
+.canvas-skeleton__stand,
+.canvas-skeleton__base,
+.canvas-skeleton__disc {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(145, 94, 255, 0.12);
+  background-image: linear-gradient(
+    100deg,
+    rgba(145, 94, 255, 0) 20%,
+    rgba(191, 97, 255, 0.28) 50%,
+    rgba(145, 94, 255, 0) 80%
+  );
+  background-size: 250% 100%;
+  background-repeat: no-repeat;
+  animation: canvas-skeleton-shimmer 2.4s ease-in-out infinite;
+}
+
+/* Glare : bande spéculaire qui balaie la silhouette en diagonale. */
+.canvas-skeleton__screen::after,
+.canvas-skeleton__stand::after,
+.canvas-skeleton__base::after,
+.canvas-skeleton__disc::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 42%,
+    rgba(255, 255, 255, 0.5) 50%,
+    transparent 58%
+  );
+  animation: canvas-skeleton-glare 2.4s ease-in-out infinite;
+}
+
+.canvas-skeleton__screen {
+  width: var(--sk-w);
+  aspect-ratio: 16 / 10;
+  border-radius: calc(var(--sk-w) * 0.025);
+}
+
+.canvas-skeleton__stand {
+  width: calc(var(--sk-w) * 0.15);
+  height: calc(var(--sk-w) * 0.08);
+  border-radius: 0 0 4px 4px;
+}
+
+.canvas-skeleton__base {
+  width: calc(var(--sk-w) * 0.42);
+  height: calc(var(--sk-w) * 0.035);
+  border-radius: 999px;
+}
+
+.canvas-skeleton__disc {
+  width: var(--sk-w);
+  height: var(--sk-w);
+  border-radius: 50%;
+}
+
+@keyframes canvas-skeleton-shimmer {
+  0% {
+    background-position: 175% 0;
+  }
+  100% {
+    background-position: -75% 0;
+  }
+}
+
+@keyframes canvas-skeleton-glare {
+  0% {
+    transform: translateX(-115%);
+  }
+  70%,
+  100% {
+    transform: translateX(115%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .canvas-skeleton__screen,
+  .canvas-skeleton__stand,
+  .canvas-skeleton__base,
+  .canvas-skeleton__disc,
+  .canvas-skeleton__screen::after,
+  .canvas-skeleton__stand::after,
+  .canvas-skeleton__base::after,
+  .canvas-skeleton__disc::after {
+    animation: none;
+  }
+}
+
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;

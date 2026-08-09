@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../style";
 import { github } from "../assets";
+import { AiOutlineLink } from 'react-icons/ai';
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -15,35 +16,68 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  link_icon,
 }) => {
   const [privateRepo,setPrivateRepo] = useState(false)
+
+  // Un vrai <a href> quand le projet a un lien : c'est le seul élément que iOS
+  // Safari considère comme cliquable au toucher (un div + onClick reste inerte).
+  const hasLink = source_code_link !== "";
+  const Card = hasLink ? motion.a : motion.div;
+  const cardProps = hasLink
+    ? {
+        href: source_code_link,
+        target: "_blank",
+        rel: "noopener noreferrer",
+        "aria-label": `Ouvrir ${name}`,
+      }
+    : {
+        role: "button",
+        tabIndex: 0,
+        "aria-label": `${name} — repository privé`,
+        onClick: () => setPrivateRepo(true),
+        onKeyDown: (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            setPrivateRepo(true);
+          }
+        },
+      };
+
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <Card
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      className='block h-full'
+      {...cardProps}
+    >
       <Tilt
         options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-full flex flex-col'
       >
-        <div className='relative w-full h-[230px]'>
+        <div className='relative w-full h-[230px] shrink-0'>
           <img
             src={image}
             alt='project_image'
             className='w-full h-full object-cover rounded-2xl'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          <div className='absolute inset-0 flex justify-end m-3 card-img_hover pointer-events-none'>
             <div
-              onClick={() =>source_code_link!=""? window.open(source_code_link, "_blank"):setPrivateRepo(true)}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center'
             >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
+              {link_icon === "site" ? (
+                <AiOutlineLink className='w-6 h-6 text-white' />
+              ) : (
+                <img
+                  src={github}
+                  alt='source code'
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              )}
             </div>
           </div>
         </div>
@@ -53,7 +87,7 @@ const ProjectCard = ({
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 
-        <div className='mt-4 flex flex-wrap gap-2'>
+        <div className='mt-auto pt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
@@ -66,7 +100,7 @@ const ProjectCard = ({
         {privateRepo && <div className="text-red-600">Ce repository est privé.</div>}
 
       </Tilt>
-    </motion.div>
+    </Card>
   );
 };
 
@@ -74,7 +108,7 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
+        <p className={`${styles.sectionSubText} `}>Ce que j'ai construit</p>
         <h2 className={`${styles.sectionHeadText}`}>Mes Projets.</h2>
       </motion.div>
 

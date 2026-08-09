@@ -41,7 +41,7 @@ function App() {
         <Navbar />
         <Hero />
         <div
-          className="cursor w-6 h-6 fixed top-0 left-0 z-20 rounded-full  animate-pulse bg-white"
+          className="cursor w-6 h-6 fixed top-0 left-0 z-20 rounded-full  animate-pulse bg-white pointer-events-none"
           ref={cursorRef}
         />
       </div>
@@ -58,7 +58,7 @@ function App() {
       <Footer/>
       <button
           onClick={()=>window.scrollTo(0,0)}
-          class="fixed bottom-4 right-4 z-50 bg-purple-700 text-white shadow-purple-800 shadow-md w-8 h-8 rounded-[50%] hover:bg-white hover:text-purple-700 hover:border-purple-600 hover:border transition-all focus:outline-none focus:ring-2 focus:ring-purple-300  text-2xl"
+          className="fixed bottom-4 right-4 z-50 bg-purple-700 text-white shadow-purple-800 shadow-md w-8 h-8 rounded-[50%] hover:bg-white hover:text-purple-700 hover:border-purple-600 hover:border transition-all focus:outline-none focus:ring-2 focus:ring-purple-300  text-2xl"
         >
           &uArr;
         </button>

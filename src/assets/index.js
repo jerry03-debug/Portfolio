@@ -23,6 +23,11 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import wergu from "./company/wergu.png"
+import awa from "./company/awa.png"
+import proassur from "./company/proassur.png"
+import scanpay from "./company/scanpay.png"
+import photographer_portfolio from "./company/photographer_portfolio.png"
+import awa_chatbot from "./company/awa_chatbot.png"
 import wergu_web from "./wergu_web.png"
 import medsen from "./medsen.png"
 import stock_backend from "./stock_backend.png"
@@ -45,6 +50,11 @@ export {
   stock_backend,
   parapharm,
   logo,
+  awa,
+  proassur,
+  scanpay,
+  photographer_portfolio,
+  awa_chatbot,
   backend,
   creator,
   mobile,
