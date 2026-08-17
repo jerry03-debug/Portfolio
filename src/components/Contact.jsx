@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import {HiOutlineDocumentDownload} from 'react-icons/hi'
+import {HiOutlineDocumentDownload, HiOutlineMail} from 'react-icons/hi'
 import { styles } from "../style";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -105,13 +105,21 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Restons en contact</p>
+        <p className={styles.sectionSubText}>Travaillons ensemble</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+
+        <a
+          href='mailto:diadiery3@gmail.com'
+          className='mt-4 inline-flex items-center gap-2 text-secondary hover:text-white transition-colors'
+        >
+          <HiOutlineMail size={20} />
+          diadiery3@gmail.com
+        </a>
 
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
+          className='mt-8 flex flex-col gap-8'
         >
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Prénom</span>
@@ -157,12 +165,13 @@ const Contact = () => {
             >
             {loading ? "En cours d'envoi..." : "Envoyer"}
           </button>
-          <span
+          <button
+            type='button'
             onClick={downloadCV}
             className='bg-purple-700  whitespace-nowrap py-2 px-4 hover:bg-transparent hover:border hover:border-purple-600  transition-all rounded-xl outline-none flex items-center gap-2 text-white font-bold shadow-md shadow-primary'
             >
-             <HiOutlineDocumentDownload size={28}/> Mon CV 
-          </span>
+             <HiOutlineDocumentDownload size={28}/> Mon CV
+          </button>
             </div>
           {emailSent && <span className="text-green-500 font-bold animate-pulse">Merci! Nous allons vous revenir le plus tot possible.</span>}
           {emailSent==false && <span className="text-red-500 font-bold animate-pulse">Oups! Une chose s'est mal passée, veuillez réessayez.</span>}

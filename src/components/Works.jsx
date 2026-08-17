@@ -12,6 +12,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 const ProjectCard = ({
   index,
   name,
+  year,
   description,
   tags,
   image,
@@ -87,7 +88,10 @@ const ProjectCard = ({
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 
-        <div className='mt-auto pt-4 flex flex-wrap gap-2'>
+        <div className='mt-auto pt-4 flex flex-wrap items-center gap-2'>
+          {year && (
+            <p className='text-[14px] orange-text-gradient'>#{year}</p>
+          )}
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}

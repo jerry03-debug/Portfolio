@@ -131,6 +131,9 @@
    réelle du modèle à l'écran plutôt qu'une valeur fixe en pixels. */
 .canvas-skeleton--screen {
   --sk-w: clamp(260px, 42vw, 620px);
+  /* Le modèle du hero est posé bas dans la scène : on décale la silhouette
+     vers le bas pour qu'elle tombe là où l'écran 3D apparaîtra. */
+  transform: translateY(calc(var(--sk-w) * 0.18));
 }
 
 .canvas-skeleton--sphere {
