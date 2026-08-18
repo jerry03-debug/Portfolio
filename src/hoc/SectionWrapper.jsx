@@ -10,7 +10,11 @@ const SectionWrapper = (Component,idName) =>
             variants={staggerContainer()}
             initial="hidden"
             whileInView="show"
-            viewport={{once:true,amount:0.25}}
+            // amount:"some" et non une fraction : une section plus haute que
+            // l'écran ne peut jamais atteindre un seuil de 25 %, l'animation ne
+            // se déclenche alors jamais et la section reste en opacity:0 —
+            // invisible mais toujours cliquable.
+            viewport={{once:true,amount:"some"}}
             className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
         
         >
