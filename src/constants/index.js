@@ -23,6 +23,7 @@ import {
     scanpay,
     photographer_portfolio,
     awa_chatbot,
+    analytics,
     logo,
     shopify,
     wergu_web,
@@ -251,6 +252,30 @@ import {
       link_icon: "site",
     },
     {
+      name: "Analytics Scan&Pay",
+      year: 2026,
+      description:
+        "Dashboard interne d'acquisition : intégration de l'API PostHog, tracking UTM par canal (Instagram, Facebook…) et analyse d'entonnoir révélant les points d'abandon du parcours de souscription. L'équipe marketing sait enfin quels canaux convertissent et arbitre son budget sur des chiffres.",
+      tags: [
+        {
+          name: "posthog",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "funnels",
+          color: "green-text-gradient",
+        },
+        {
+          name: "utm tracking",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: analytics,
+      source_code_link: "",
+      link_icon: "private",
+      note: "Outil interne",
+    },
+    {
       name: "Portfolio - Photographe",
       year: 2026,
       description:
@@ -289,13 +314,14 @@ import {
         },
       ],
       image: awa_chatbot,
-      source_code_link: "",
+      source_code_link: "https://wa.me/221763298020",
+      link_icon: "whatsapp",
     },
     {
       name: "Wergu Web",
       year: 2023,
       description:
-      "Version web de l’application mobile Wergu. Elle permet de voir les pharmacies ouvertes les plus proches et de fournir des informations pour faciliter l’accès aux médicaments. Parmi ses fonctionnalités, il y a également la recherche d’équivalents pour les médicaments ainsi que leurs prix.",
+      "Première version web de l'application Wergu : localisation des pharmacies ouvertes les plus proches, recherche d'équivalents de médicaments et de leurs prix. Le service n'est plus en ligne.",
       tags: [
         {
           name: "react",
@@ -312,29 +338,8 @@ import {
       ],
       image: wergu_web,
       source_code_link: "",
-    },
-    {
-      name: "Wergu Stock API",
-      year: 2023,
-      description:
-        "API comprenant l'authentification, la gestion de commandes et les opérations CRUD pour la gestion de stock des pharmacies.",
-      tags: [
-        {
-          name: "mongodb",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "node.js",
-          color: "green-text-gradient",
-        },
-
-        {
-          name: "rest api",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: stock_backend,
-      source_code_link: "",
+      link_icon: "private",
+      note: "Dépôt privé",
     },
     {
       name: "Password Cracker",

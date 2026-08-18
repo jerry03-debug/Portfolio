@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Tilt from 'react-parallax-tilt'
 import { motion } from "framer-motion";
 
 import { styles } from "../style";
 import { github } from "../assets";
-import { AiOutlineLink } from 'react-icons/ai';
+import { AiOutlineLink, AiOutlineWhatsApp, AiOutlineLock } from 'react-icons/ai';
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -18,11 +18,11 @@ const ProjectCard = ({
   image,
   source_code_link,
   link_icon,
+  note,
 }) => {
-  const [privateRepo,setPrivateRepo] = useState(false)
-
   // Un vrai <a href> quand le projet a un lien : c'est le seul élément que iOS
   // Safari considère comme cliquable au toucher (un div + onClick reste inerte).
+  // Sans lien, la carte reste un simple bloc : pas de clic mort à proposer.
   const hasLink = source_code_link !== "";
   const Card = hasLink ? motion.a : motion.div;
   const cardProps = hasLink
@@ -32,18 +32,7 @@ const ProjectCard = ({
         rel: "noopener noreferrer",
         "aria-label": `Ouvrir ${name}`,
       }
-    : {
-        role: "button",
-        tabIndex: 0,
-        "aria-label": `${name} — repository privé`,
-        onClick: () => setPrivateRepo(true),
-        onKeyDown: (e) => {
-          if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            setPrivateRepo(true);
-          }
-        },
-      };
+    : {};
 
   return (
     <Card
@@ -72,6 +61,10 @@ const ProjectCard = ({
             >
               {link_icon === "site" ? (
                 <AiOutlineLink className='w-6 h-6 text-white' />
+              ) : link_icon === "whatsapp" ? (
+                <AiOutlineWhatsApp className='w-6 h-6 text-white' />
+              ) : link_icon === "private" ? (
+                <AiOutlineLock className='w-5 h-5 text-secondary' />
               ) : (
                 <img
                   src={github}
@@ -84,7 +77,14 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          <div className='flex items-start justify-between gap-3'>
+            <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+            {note && (
+              <span className='mt-2 shrink-0 text-[12px] text-secondary italic'>
+                {note}
+              </span>
+            )}
+          </div>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 
@@ -101,7 +101,6 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-        {privateRepo && <div className="text-red-600">Ce repository est privé.</div>}
 
       </Tilt>
     </Card>

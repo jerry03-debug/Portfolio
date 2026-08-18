@@ -28,6 +28,7 @@ import proassur from "./company/proassur.png"
 import scanpay from "./company/scanpay.png"
 import photographer_portfolio from "./company/photographer_portfolio.png"
 import awa_chatbot from "./company/awa_chatbot.png"
+import analytics from "./company/analytics.png"
 import wergu_web from "./wergu_web.png"
 import medsen from "./medsen.png"
 import stock_backend from "./stock_backend.png"
@@ -55,6 +56,7 @@ export {
   scanpay,
   photographer_portfolio,
   awa_chatbot,
+  analytics,
   backend,
   creator,
   mobile,
