@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -o \"createElement\\(\\\\\"div\\\\\"[^\\)]\\\\{0,200\\\\}\" /Users/apple/Desktop/Personal-Projects/Portfolio/node_modules/react-parallax-tilt/dist/index.esm.js)",
+      "Bash(yarn build *)",
+      "Bash(grep -o \"render\\(\\){.\\\\{0,600\\\\}\" /Users/apple/Desktop/Personal-Projects/Portfolio/node_modules/react-parallax-tilt/dist/index.esm.js)",
+      "Bash(git commit *)",
+      "Bash(node -e \"const ai=require\\('react-icons/ai'\\); console.log\\('AiOutlineWhatsApp:', !!ai.AiOutlineWhatsApp, '| AiOutlineLock:', !!ai.AiOutlineLock, '| AiFillLock:', !!ai.AiFillLock\\)\")",
+      "Bash(grep -o \"dpr[=:][^,;]\\\\{0,40\\\\}\" node_modules/@react-three/fiber/dist/react-three-fiber.cjs.dev.js)",
+      "Bash(grep -o \"frameloop[=:][^,;]\\\\{0,30\\\\}\" node_modules/@react-three/fiber/dist/react-three-fiber.cjs.dev.js)",
+      "Bash(node -e \"console.log\\('r3f',require\\('./node_modules/@react-three/fiber/package.json'\\).version,'| drei',require\\('./node_modules/@react-three/drei/package.json'\\).version,'| three',require\\('./node_modules/three/package.json'\\).version\\)\")"
+    ]
+  }
+}
