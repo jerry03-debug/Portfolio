@@ -33,6 +33,9 @@ const ExperienceCard = ({experience})=>{
       </h3>
 
       <p className='text-secondary text-[16px] m-0 font-semibold'>{experience.company_name}</p>
+      {experience.summary && (
+        <p className='text-white-100 text-[14px] mt-3 mb-0 tracking-wider'>{experience.summary}</p>
+      )}
     </div>
         <ul className="list-disc ml-5 mt-5 space-y-2">
         {experience.points.map((point,index)=>{
@@ -45,6 +48,12 @@ const ExperienceCard = ({experience})=>{
         })}
 
         </ul>
+
+        {experience.stack && (
+          <p className='text-secondary text-[13px] mt-4 mb-0 tracking-wider'>
+            {experience.stack.join(" · ")}
+          </p>
+        )}
 
   </VerticalTimelineElement>
 )

@@ -133,12 +133,15 @@ import {
       icon: awa,
       iconBg: "#fff",
       date: "août 2025 - aujourd'hui",
+      summary: "Produits digitaux d'assurance : acquisition, souscription et automatisation des opérations.",
       points: [
-        "Participation à l'ensemble du cycle de développement des solutions numériques : conception, modélisation, développement et mise en production.",
-        "Optimisation et maintenance des systèmes pour garantir leur fiabilité et leurs performances.",
-        "Conception d'interfaces utilisateurs intuitives en collaboration avec l'équipe design.",
-        "Intégration de bonnes pratiques de développement logiciel et de revues de code pour améliorer la qualité du produit.",
+        "Contribué à la conception et au développement de Scan&Pay Assurances, plateforme de souscription digitale d'assurances auto, voyage et habitation, intégrée aux systèmes métier et de paiement.",
+        "Contribué à la mise en place d'un workflow d'extraction documentaire combinant OCR et Gemini sur Vertex AI, qui transforme cartes grises et permis photographiés en JSON structuré pour réduire la saisie manuelle.",
+        "Conçu et implémenté des parcours WhatsApp Flows pour automatiser des opérations d'assurance directement dans WhatsApp.",
+        "Mis en place un dispositif d'analyse produit et d'observabilité (PostHog, Nginx, UTMs) pour suivre les parcours utilisateurs et aider le support à les diagnostiquer.",
+        "Contribué au développement et au déploiement de plateformes SaaS métier dans l'assurance.",
       ],
+      stack: ["React", "TypeScript", "Node.js", "KeystoneJS", "MySQL", "REST / GraphQL", "Vertex AI", "Gemini", "WhatsApp Cloud API", "PostHog"],
     },
     {
       title: "Développeur Full Stack",
@@ -146,12 +149,13 @@ import {
       icon: proassur,
       iconBg: "#fff",
       date: "août 2024 - août 2025",
+      summary: "Automatisation de processus métier dans l'assurance.",
       points: [
-        "Contribution à la transformation digitale du secteur de l'assurance par le développement de solutions innovantes.",
-        "Amélioration de l'expérience client et optimisation des processus internes.",
-        "Mise en place d'applications web hybrides et de services back-end robustes.",
-        "Travail en mode collaboratif avec des équipes variées, dont produit, design et QA.",
+        "Contribué à la digitalisation de processus d'assurance jusque-là largement manuels, de la gestion des contrats au traitement des sinistres.",
+        
+        "Mis en place les intégrations avec les services externes et APIs nécessaires aux workflows métier.",
       ],
+      stack: ["React", "TypeScript", "Node.js", "KeystoneJS", "MySQL", "REST / GraphQL", "Google Cloud", "Vertex AI"],
     },
     {
       title: "Développeur Full Stack / Mobile Freelance",
@@ -160,42 +164,35 @@ import {
       iconBg: "#fff",
       date: "nov. 2023 - sept. 2024",
       points: [
-        "Réalisation de projets mobiles et web sur mesure pour des clients.",
-        "Conception et développement d'applications responsives et ergonomiques.",
-        "Gestion de la relation client et des livrables tout au long du cycle projet.",
-        "Création de prototypes et interfaces visuelles pour une expérience utilisateur forte.",
+        "Conçu et développé des applications web et mobiles sur mesure à partir des besoins exprimés par les clients.",
+        "Géré le développement et la livraison de chaque projet, du cadrage à la mise en ligne.",
       ],
+      stack: ["React", "React Native", "Node.js"],
+    },
+    {
+      title: "Développeur Full Stack",
+      company_name: "Wergu",
+      icon: wergu,
+      iconBg: "#fff",
+      date: "avril 2023 - octobre 2023",
+      points: [
+        "Contribué au développement et à la maintenance d'applications web de santé, dont la version web de Wergu.",
+        "Conçu et intégré des interfaces utilisateur et des fonctionnalités full stack, du front React à l'API Node.js.",
+      ],
+      stack: ["MongoDB", "Express", "React", "Node.js"],
     },
     {
       title: "Développeur Mobile",
       company_name: "Wergu",
       icon: wergu,
       iconBg: "#fff",
-      date: "Juin 2022 - Juillet 2022",
+      date: "juin 2022 - juillet 2022",
+      summary: "Stage de fin de cycle, diplôme de technicien supérieur en informatique.",
       points: [
-        "Stage conventionné de fin de cycle pour l'obtention du diplôme de technicien supérieur en informatique",
-        "Mise en place d'une application mobile de l'analyse au developpement avec notamment le framework React Native",
-        "Participation à des revues de code et fournir des retours constructifs aux autres développeurs.",
-        "Travail en équipe en suivant la méthodologie Agile pour favoriser l'adaptabilité tout au long du projet",
-
+        "Contribué au développement d'une application mobile de santé en React Native, de l'analyse à l'implémentation.",
+        "Participé à la mise en place de la recherche géolocalisée de pharmacies et de médicaments, et de la recherche d'équivalents.",
       ],
-    },
-   
-    {
-      title: "Développeur Full stack ",
-      company_name: "Wergu",
-      icon: wergu,
-      iconBg: "#fff",
-      date: "Avril 2023 - Octobre 2023",
-      points: [
-        "Création de design pour avoir des produits intuitifs pour les utilisateurs",
-        "Le développement et la maintenance d'applications web dans le domaine de la santé. ",
-        "Utilisation de la stack MERN (MongoDB,Express,React,Node)",
-        "Collaboration avec des équipes pluridisciplinaires, y compris des concepteurs, des chefs de produit et d'autres développeurs, pour créer des produits de haute qualité.",
-        
-
-
-      ],
+      stack: ["React Native"],
     },
   ];
   
