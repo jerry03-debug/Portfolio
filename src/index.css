@@ -19,6 +19,44 @@
   display: block;
 }
 
+/* Flottement doux du modèle 3D du hero. Pure animation CSS sur le conteneur
+   du canvas : on déplace l'image déjà rendue (compositing GPU), sans re-rendre
+   la scène WebGL — coût négligeable. translate uniquement, jamais de rotate
+   (qui ferait pivoter l'image plate du canvas). */
+.hero-canvas-float {
+  animation: hero-float 7s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-canvas-float {
+    animation: none;
+  }
+}
+
+/* Mise en exergue des mots-clés : teinte mauve du site + fond translucide.
+   box-decoration-break:clone pour que le fond arrondi reste correct quand le
+   texte passe à la ligne. */
+.highlight {
+  color: #c4b1ff;
+  background: rgba(145, 94, 255, 0.14);
+  padding: 0.05em 0.35em;
+  border-radius: 0.35em;
+  font-weight: 600;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(

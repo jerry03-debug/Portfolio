@@ -118,9 +118,9 @@ const Works = () => {
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-white text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 text-white text-[17px] max-w-3xl leading-[34px]'
         >
-          Les projets suivants vous donneront une idée de mes compétences et mon expérience à travers des exemples concrets de mon travail. Chaque projet est brièvement décrit avec des liens vers les référentiels de code et des démonstrations en direct. Cela reflète ma capacité à résoudre des problèmes complexes, à travailler avec différentes technologies et à gérer efficacement des projets.
+          Les projets suivants donnent une idée de mon travail à travers des <span className="highlight">exemples concrets</span>. Chacun est brièvement décrit, avec un lien vers le code ou une démo. Ils reflètent ma capacité à résoudre des <span className="highlight">problèmes complexes</span> avec différentes technologies.
         </motion.p>
       </div>
 

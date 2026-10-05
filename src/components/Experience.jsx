@@ -7,6 +7,16 @@ import {experiences} from '../constants'
 import { SectionWrapper } from '../hoc'
 import { textVariant } from '../utils/motion'
 
+// Les points viennent de constants/index.js en texte brut ; **mot** y marque
+// les quelques termes à mettre en exergue (même style que sur Profil/Projets),
+// sans avoir à écrire du JSX dans le fichier de données.
+const renderHighlighted = (text) => {
+  const parts = text.split(/\*\*(.+?)\*\*/g)
+  return parts.map((part, i) =>
+    i % 2 === 1 ? <span key={i} className="highlight">{part}</span> : part
+  )
+}
+
 const ExperienceCard = ({experience})=>{
   return(
 
@@ -42,7 +52,7 @@ const ExperienceCard = ({experience})=>{
           return(
 
             <li key={`experience-point-${index}`} className="text-white-100 text-[14px] pl-1 tracking-wider">
-            {point}
+            {renderHighlighted(point)}
           </li>
         )
         })}

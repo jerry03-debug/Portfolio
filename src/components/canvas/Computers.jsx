@@ -11,10 +11,10 @@ const Computers = ({isMobile}) => {
   return (
     <mesh  >
       // eslint-disable-next-line
-      <hemisphereLight intensity={0.2} 
+      <hemisphereLight intensity={0.2}
        groundColor="black"/>
       <pointLight intensity={1}/>
-      <spotLight 
+      <spotLight
         position={[-20,50,10]}
         angle={0.12}
         penumbra={1}
@@ -22,7 +22,7 @@ const Computers = ({isMobile}) => {
         castShadow
         shadow-mapSize={1024}
       />
-       
+
       <primitive object={computer.scene}
         scale={isMobile? 0.7 : 0.75}
         // Remonté pour resserrer l'écart avec le bloc de titre du hero.
@@ -50,8 +50,9 @@ const ComputerCanvas = ()=>{
    })
   return(
     <Canvas
-      frameLoop="demand"
-      shadows 
+      className="hero-canvas-float"
+      frameloop="demand"
+      shadows
       camera={{position:[20,3,5],fov:25}}
       gl={{preserveDrawingBuffer:true}}
     >

@@ -44,8 +44,8 @@ const About = () => {
       <h2 className={styles.sectionHeadText}>Profil</h2>
     </motion.div>
 
-    <motion.p  variants={fadeIn("","",0.1,1)} className="mt-4  text-gray-100 text-[17px] max-w-3xl leading-[30px]">
-     Ingénieur en informatique diplômé de l'École Supérieure Polytechnique de Dakar, je développe des applications web et mobiles, de l’analyse des besoins à la mise en production. J'aime les projets à fort impact et tout ce qui laisse de la place à la créativité, et je prends autant de plaisir à apprendre qu'à partager ce que je sais.
+    <motion.p  variants={fadeIn("","",0.1,1)} className="mt-4  text-gray-100 text-[17px] max-w-3xl leading-[34px]">
+     <span className="highlight">Ingénieur en informatique</span> diplômé de l'École Supérieure Polytechnique de Dakar, je développe des applications web et mobiles, de l’analyse des besoins à la <span className="highlight">mise en production</span>. J'aime les projets à <span className="highlight">fort impact</span> et tout ce qui laisse de la place à la créativité, et je prends autant de plaisir à <span className="highlight">apprendre qu'à partager</span> ce que je sais.
     </motion.p>
 
     <div className='mt-20 grid grid-cols-1 sm:grid-cols-2 gap-7 w-full'>

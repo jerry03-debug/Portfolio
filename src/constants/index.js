@@ -128,20 +128,20 @@ import {
   
   const experiences = [
     {
-      title: "Software Engineer",
+      title: "Ingénieur Logiciel",
       company_name: "AWA AFRICA",
       icon: awa,
       iconBg: "#fff",
       date: "août 2025 - aujourd'hui",
       summary: "Produits digitaux d'assurance : acquisition, souscription et automatisation des opérations.",
       points: [
-        "Contribué à la conception et au développement de Scan&Pay Assurances, plateforme de souscription digitale d'assurances auto, voyage et habitation, intégrée aux systèmes métier et de paiement.",
-        "Contribué à la mise en place d'un workflow d'extraction documentaire combinant OCR et Gemini sur Vertex AI, qui transforme cartes grises et permis photographiés en JSON structuré pour réduire la saisie manuelle.",
-        "Conçu et implémenté des parcours WhatsApp Flows pour automatiser des opérations d'assurance directement dans WhatsApp.",
-        "Mis en place un dispositif d'analyse produit et d'observabilité (PostHog, Nginx, UTMs) pour suivre les parcours utilisateurs et aider le support à les diagnostiquer.",
-        "Contribué au développement et au déploiement de plateformes SaaS métier dans l'assurance.",
+        "Contribué à Scan&Pay (front-end, fonctionnalités back-end, intégrations), parcours 100 % digital de souscription d'assurance auto, voyage et habitation bouclé en **~2 min**, avec paiement branché directement sur le flow métier existant.",
+        "Contribué à un workflow d'extraction documentaire transformant cartes grises et permis photographiés en données structurées, qui pré-remplit le dossier de souscription et **supprime la ressaisie**.",
+        "Conçu et implémenté des parcours WhatsApp Flows réalisant souscription auto, renouvellement/attestation et déclaration de sinistre **directement dans la conversation**.",
+        "Mis en place un dispositif d'observabilité produit, du tunnel de conversion au parcours utilisateur, exploité par la compagnie et ses partenaires pour la **prise de décision** et le support opérationnel.",
+        "Contribué à des plateformes SaaS pour les **IPM** (Institutions de Prévoyance Maladie) couvrant gestion des adhérents, cotisations, remboursements santé et réseau de soins.",
       ],
-      stack: ["React", "TypeScript", "Node.js", "KeystoneJS", "MySQL", "REST / GraphQL", "Vertex AI", "Gemini", "WhatsApp Cloud API", "PostHog"],
+      stack: ["React", "TypeScript", "Node.js", "KeystoneJS", "MySQL", "REST / GraphQL", "Vertex AI", "Gemini", "WhatsApp Cloud API", "PostHog", "Nginx"],
     },
     {
       title: "Développeur Full Stack",
@@ -151,11 +151,12 @@ import {
       date: "août 2024 - août 2025",
       summary: "Automatisation de processus métier dans l'assurance.",
       points: [
-        "Contribué à la digitalisation de processus d'assurance jusque-là largement manuels, de la gestion des contrats au traitement des sinistres.",
-        
-        "Mis en place les intégrations avec les services externes et APIs nécessaires aux workflows métier.",
+        "Conçu un chatbot d'assurance, récompensé du **3e prix** du concours Insurance Innovation organisé par le PNUD.",
+        "Automatisé des processus d'assurance auparavant manuels, de la gestion des contrats au traitement des sinistres.",
+        "Intégré de l'extraction et de l'analyse documentaire dans les workflows métier.",
+        "Mis en place les intégrations avec les services externes et APIs nécessaires aux parcours.",
       ],
-      stack: ["React", "TypeScript", "Node.js", "KeystoneJS", "MySQL", "REST / GraphQL", "Google Cloud", "Vertex AI"],
+      stack: ["React", "TypeScript", "Node.js", "KeystoneJS", "MySQL", "REST / GraphQL", "Google Cloud", "Vertex AI", "Gemini"],
     },
     {
       title: "Développeur Full Stack / Mobile Freelance",
@@ -164,8 +165,8 @@ import {
       iconBg: "#fff",
       date: "nov. 2023 - sept. 2024",
       points: [
-        "Conçu et développé des applications web et mobiles sur mesure à partir des besoins exprimés par les clients.",
-        "Géré le développement et la livraison de chaque projet, du cadrage à la mise en ligne.",
+        "Conçu et développé des applications web et mobiles sur mesure répondant aux besoins métier des clients.",
+        "Pris en charge chaque projet de l'analyse des besoins et du cadrage jusqu'à la mise en production.",
       ],
       stack: ["React", "React Native", "Node.js"],
     },
@@ -175,9 +176,10 @@ import {
       icon: wergu,
       iconBg: "#fff",
       date: "avril 2023 - octobre 2023",
+      summary: "Wergu : application de santé pour localiser les pharmacies de garde proches et faciliter l'accès aux médicaments (prix, équivalents).",
       points: [
-        "Contribué au développement et à la maintenance d'applications web de santé, dont la version web de Wergu.",
-        "Conçu et intégré des interfaces utilisateur et des fonctionnalités full stack, du front React à l'API Node.js.",
+        "Contribué au développement et à la maintenance de la première version web de Wergu, dans le domaine de la santé.",
+        "Conçu et intégré des interfaces et fonctionnalités full stack, du front React à l'API Node.js.",
       ],
       stack: ["MongoDB", "Express", "React", "Node.js"],
     },
@@ -187,10 +189,10 @@ import {
       icon: wergu,
       iconBg: "#fff",
       date: "juin 2022 - juillet 2022",
-      summary: "Stage de fin de cycle, diplôme de technicien supérieur en informatique.",
+      summary: "Stage de fin de cycle (technicien supérieur). Wergu aide à trouver une pharmacie de garde proche et le bon médicament, au meilleur prix.",
       points: [
-        "Contribué au développement d'une application mobile de santé en React Native, de l'analyse à l'implémentation.",
-        "Participé à la mise en place de la recherche géolocalisée de pharmacies et de médicaments, et de la recherche d'équivalents.",
+        "Contribué au développement de l'application mobile Wergu en React Native, de l'analyse à l'implémentation.",
+        "Participé au module de recherche géolocalisée de pharmacies et de médicaments, avec recherche d'équivalents et de prix.",
       ],
       stack: ["React Native"],
     },
