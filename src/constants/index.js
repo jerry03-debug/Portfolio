@@ -24,7 +24,6 @@ import {
     photographer_portfolio,
     awa_chatbot,
     analytics,
-    logo,
     shopify,
     wergu_web,
     medsen,
@@ -128,18 +127,18 @@ import {
   
   const experiences = [
     {
-      title: "Ingénieur Logiciel",
+      title: "Ingénieur de conception en informatique",
       company_name: "AWA AFRICA",
       icon: awa,
       iconBg: "#fff",
       date: "août 2025 - aujourd'hui",
       summary: "Produits digitaux d'assurance : acquisition, souscription et automatisation des opérations.",
       points: [
-        "Contribué à Scan&Pay (front-end, fonctionnalités back-end, intégrations), parcours 100 % digital de souscription d'assurance auto, voyage et habitation bouclé en **~2 min**, avec paiement branché directement sur le flow métier existant.",
+        "Contribué à Scan&Pay (front-end, fonctionnalités back-end, intégrations), parcours 100 % digital de souscription d'assurance auto, voyage et habitation bouclé en **~2 min**, dans une démarche de **massification** de la production en assurance.",
         "Contribué à un workflow d'extraction documentaire transformant cartes grises et permis photographiés en données structurées, qui pré-remplit le dossier de souscription et **supprime la ressaisie**.",
-        "Conçu et implémenté des parcours WhatsApp Flows réalisant souscription auto, renouvellement/attestation et déclaration de sinistre **directement dans la conversation**.",
-        "Mis en place un dispositif d'observabilité produit, du tunnel de conversion au parcours utilisateur, exploité par la compagnie et ses partenaires pour la **prise de décision** et le support opérationnel.",
-        "Contribué à des plateformes SaaS pour les **IPM** (Institutions de Prévoyance Maladie) couvrant gestion des adhérents, cotisations, remboursements santé et réseau de soins.",
+        "Conçu et implémenté un **chatbot WhatsApp** réalisant souscription auto, renouvellement/attestation et déclaration de sinistre **directement dans la conversation**.",
+        "Mis en place un dispositif d'**analytics** et d'observabilité produit, du tunnel de conversion au parcours utilisateur, exploité par la compagnie et ses partenaires pour la **prise de décision** et le support opérationnel.",
+        "Développé des modules full stack sur des plateformes SaaS pour les **IPM** (Institutions de Prévoyance Maladie) : gestion des adhérents, cotisations, remboursements santé et réseau de soins.",
       ],
       stack: ["React", "TypeScript", "Node.js", "KeystoneJS", "MySQL", "REST / GraphQL", "Vertex AI", "Gemini", "WhatsApp Cloud API", "PostHog", "Nginx"],
     },
@@ -159,18 +158,6 @@ import {
       stack: ["React", "TypeScript", "Node.js", "KeystoneJS", "MySQL", "REST / GraphQL", "Google Cloud", "Vertex AI", "Gemini"],
     },
     {
-      title: "Développeur Full Stack / Mobile Freelance",
-      company_name: "Freelance",
-      icon: logo,
-      iconBg: "#fff",
-      date: "nov. 2023 - sept. 2024",
-      points: [
-        "Conçu et développé des applications web et mobiles sur mesure répondant aux besoins métier des clients.",
-        "Pris en charge chaque projet de l'analyse des besoins et du cadrage jusqu'à la mise en production.",
-      ],
-      stack: ["React", "React Native", "Node.js"],
-    },
-    {
       title: "Développeur Full Stack",
       company_name: "Wergu",
       icon: wergu,
@@ -179,7 +166,7 @@ import {
       summary: "Wergu : application de santé pour localiser les pharmacies de garde proches et faciliter l'accès aux médicaments (prix, équivalents).",
       points: [
         "Contribué au développement et à la maintenance de la première version web de Wergu, dans le domaine de la santé.",
-        "Conçu et intégré des interfaces et fonctionnalités full stack, du front React à l'API Node.js.",
+        "Conçu et intégré des interfaces et fonctionnalités full stack, du front React à l'**API Express/Node.js**.",
       ],
       stack: ["MongoDB", "Express", "React", "Node.js"],
     },

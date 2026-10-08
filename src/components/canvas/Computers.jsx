@@ -50,7 +50,6 @@ const ComputerCanvas = ()=>{
    })
   return(
     <Canvas
-      className="hero-canvas-float"
       frameloop="demand"
       shadows
       camera={{position:[20,3,5],fov:25}}
@@ -58,6 +57,8 @@ const ComputerCanvas = ()=>{
     >
       <Suspense fallback={<CanvasLoader/>}>
         <OrbitControls
+        autoRotate
+        autoRotateSpeed={0.4}
         enableZoom={false}
         maxPolarAngle={Math.PI/2}
         minPolarAngle={Math.PI/2}/>

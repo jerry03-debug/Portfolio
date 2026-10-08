@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import './index.css'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import {
@@ -14,9 +14,26 @@ import {
   Footer
 } from './components'
 import { motion } from 'framer-motion'
-import { useRef } from 'react'
+import Lenis from 'lenis'
+
 function App() {
   const cursorRef = useRef(null)
+
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true,
+    })
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+
+    return () => lenis.destroy()
+  }, [])
 
   useEffect(() => {
     const mouseMove = (e) => {
