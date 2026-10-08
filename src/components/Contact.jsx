@@ -61,7 +61,7 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_kjxzh1y",
+        "service_ey96nmk",
         "template_a4mi8np",
         
         
@@ -122,7 +122,7 @@ const Contact = () => {
           className='mt-8 flex flex-col gap-8'
         >
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Prénom</span>
+            <span className='text-white font-medium mb-4'>Nom Complet</span>
             <input
             required
               type='text'
