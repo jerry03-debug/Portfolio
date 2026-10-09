@@ -18,33 +18,6 @@ const Contact = () => {
   const [emailSent,setEmailSent] = useState()
 
   const [loading, setLoading] = useState(false);
-  //Télécharger CV
-  const downloadCV = async () => {
-    const pdfUrl = '/Mon_CV.pdf';
-  
-    try {
-      const response = await fetch(pdfUrl);
-      const blob = await response.blob();
-  
-      const blobUrl = window.URL.createObjectURL(blob);
-  
-      const link = document.createElement('a');
-      link.href = blobUrl;
-      link.setAttribute('download', 'CV-Diery-Dia.pdf');
-      link.type = 'application/pdf';
-  
-      // Appending the link to the body to trigger the download
-      document.body.appendChild(link);
-      link.click();
-  
-      // Removing the link from the body
-      document.body.removeChild(link);
-    } catch (error) {
-      console.error('Error downloading the PDF:', error);
-    }
-  };
-  
-
   const handleChange = (e) => {
     const { target } = e;
     const { name, value } = target;
@@ -165,13 +138,15 @@ const Contact = () => {
             >
             {loading ? "En cours d'envoi..." : "Envoyer"}
           </button>
-          <button
-            type='button'
-            onClick={downloadCV}
+          <a
+            href='/Mon_CV.pdf'
+            download='CV-Diery-Dia.pdf'
+            target='_blank'
+            rel='noopener noreferrer'
             className='bg-purple-700  whitespace-nowrap py-2 px-4 hover:bg-transparent hover:border hover:border-purple-600  transition-all rounded-xl outline-none flex items-center gap-2 text-white font-bold shadow-md shadow-primary'
             >
              <HiOutlineDocumentDownload size={28}/> Mon CV
-          </button>
+          </a>
             </div>
           {emailSent && <span className="text-green-500 font-bold animate-pulse">Merci! Nous allons vous revenir le plus tot possible.</span>}
           {emailSent==false && <span className="text-red-500 font-bold animate-pulse">Oups! Une chose s'est mal passée, veuillez réessayez.</span>}
